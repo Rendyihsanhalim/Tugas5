@@ -2,7 +2,7 @@
     <div class="container mt-4">
         <div v-for="article in articles" :key="article.id" class="row">
             <!-- Kolom untuk card -->
-            <div class="col-md-4"   v-if="task.id == paramId">
+            <div class="col-md-4"   v-if="article.id == paramId">
                 <div class="card">
                     <img :src="article.img" class="card-img-top" alt="Gambar Contoh" style="max-width: 100%;">
                     <div class="card-body">
